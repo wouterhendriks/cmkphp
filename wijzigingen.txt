@@ -1,0 +1,25 @@
+WIJZIGINGEN
+- theme $plugin_checkmijnkenteken->precheck($kenteken) gebruiken ipv get_rdw_info($kenteken)
+- theme/functions.php get_rdw_info() kan komen te vervallen
+- Inhoud van api2.0/config.local.php overgezet naar wp-config.php
+- Overige plugins uitgeschakeld
+- Bedankt pagina: verwijzen naar relatieve URL ipv checkmijnkenteken.nl
+- /api, /api2.0, /logger uitgeschakeld
+- /rapport/betalen/bedankt/ -> Melding dat het rapport per e-mail verstuurd wordt
+
+NOG TE DOEN
+- https://checkmijnkenteken.tn-dev.nl/rapport/betalen/bedankt/ ziet er nog niet optimaal uit
+
+OPMERKINGEN/DUBBELCHECKEN
+- activecampaign.php is verplaatst naar /mogelijk-niet-meer-in-gebruik
+- cartalkdata.php is verplaatst naar /mogelijk-niet-meer-in-gebruik
+- generate-pdf.php is verplaatst naar /mogelijk-niet-meer-in-gebruik
+- rdwdata.php is verplaatst naar /mogelijk-niet-meer-in-gebruik
+
+
+
+THEME CHANGES
+lib/gravity-forms.php:56:       $rdw_info = $plugin_checkmijnkenteken->precheck( $value ); // get_rdw_info( $value );
+page-report.php:14:             $rdw_info = $plugin_checkmijnkenteken->precheck( $_GET[ 'kenteken' ] ); // get_rdw_info( $_GET['kenteken'] ); 
+template-parts/page-content/rows/model-report-backup-test-file.php:2:   //$rdw_info = get_rdw_info( $_GET['kenteken'] ); 
+template-parts/page-content/rows/model-report.php:2:    $rdw_info = $plugin_checkmijnkenteken->precheck( $_GET[ 'kenteken' ] ); // get_rdw_info( $_GET['kenteken'] ); 

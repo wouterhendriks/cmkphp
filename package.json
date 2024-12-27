@@ -1,0 +1,27 @@
+{
+  "name": "wp-plugin-checkmijnkenteken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp-contains": "^1.2.0",
+    "signature_pad": "^4.1.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
